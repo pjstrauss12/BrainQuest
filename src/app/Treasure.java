@@ -1,5 +1,6 @@
 package app;
-public class Treasure {
+
+public class Treasure implements Collectable{
     private int value;
     private String title;
     private boolean active;

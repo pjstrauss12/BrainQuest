@@ -8,7 +8,7 @@ public class Player {
     private static int health = 100;
     private static String name;
     private static double crit = .35;
-    private static ArrayList<Treasure> satchel = new ArrayList<>();
+    private static ArrayList<Collectable> satchel = new ArrayList<>();
 
     // *********
     // ACCESSORS
@@ -33,7 +33,7 @@ public class Player {
     }
 
     /** Return the Player's stachel reference */
-    public static ArrayList<Treasure> satchel(){
+    public static ArrayList<Collectable> satchel(){
         return satchel;
     }
 
@@ -41,7 +41,7 @@ public class Player {
     // MUTATORS
     // *********
 
-    public static void pickupTreasure(Treasure t){
+    public static void pickupTreasure(Collectable t){
         // add treasure to ArrayList
         satchel.add(t);
     }
@@ -57,10 +57,10 @@ public class Player {
     /** A new arraylist of Treasures is populated by all the treasures
      * from the Player's satchel that are currently set to active
      */
-    public static ArrayList<Treasure> activeTreasures(){
+    public static ArrayList<Collectable> activeTreasures(){
         // builds and returns a list of active treasures
-        ArrayList<Treasure> results = new ArrayList<>();
-        for(Treasure t : satchel){
+        ArrayList<Collectable> results = new ArrayList<>();
+        for(Collectable t : satchel){
             if(t.active()) results.add(t);
         }
 

@@ -58,6 +58,7 @@ public abstract class Creature {
 
     // UTILITIES
 
+    // Abstract method
     public abstract void attack();
    
     /** Does this creature have more than 0 health? */

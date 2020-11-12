@@ -139,7 +139,7 @@ public class NumSet {
             int num = (randArray[i] / 2);
             randArray[i] = num;
         }
-        System.out.println("This is each int array value divided by 2");
+        System.out.println("This is each int array value divided by 2:");
         printPretty(randArray);
     }
     // divByTwo method (ArrayList)
@@ -149,7 +149,7 @@ public class NumSet {
             int num = (randArrL.get(i) / 2);
             randArrL.set(i, num);
         }
-        System.out.println("This is each ArrayList value divided by 2");
+        System.out.println("This is each ArrayList value divided by 2:");
         printPretty(randArrL);
     }
     
@@ -165,6 +165,7 @@ public class NumSet {
     }
     // sumArray method (ArrayList)
     public static int sumArray(ArrayList<Integer> randArrL){
+        System.out.println();
         int result = 0;
         for(int addition : randArrL){
             result += addition;

@@ -154,23 +154,21 @@ public class NumSet {
     }
     
     // sumArray method (array)
-    public static int sumArray(int[] randArray){
+    public static void sumArray(int[] randArray){
         System.out.println();
         int result = 0;
         for(int addition : randArray){
             result = result + addition;
         }
         System.out.println("The sum of all the numbers in the array is: " + result);
-        return result;
     }
     // sumArray method (ArrayList)
-    public static int sumArray(ArrayList<Integer> randArrL){
+    public static void sumArray(ArrayList<Integer> randArrL){
         System.out.println();
         int result = 0;
         for(int addition : randArrL){
             result += addition;
         }
         System.out.println("The sum of all the numbers in the ArrayList is: " + result);
-        return result;
     }
 }

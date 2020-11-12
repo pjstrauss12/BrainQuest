@@ -108,7 +108,7 @@ public class NumSet {
     public static void shuffle(int[] randArray){
         System.out.println();
         for(int i = 0; i < randArray.length; i++){
-            int randomNumber = (int)(Math.random()*i+1);
+            int randomNumber = (int)(Math.random()*(i+1));
             int temp = randArray[randomNumber];
             randArray[randomNumber] = randArray[i];
             randArray[i] = temp;

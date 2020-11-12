@@ -122,7 +122,7 @@ public class NumSet {
     public static void shuffle(ArrayList<Integer> randArrL){
         System.out.println();
         for(int i = 0; i < randArrL.size(); i++){
-            int rand = (int)(Math.random()*i+1);
+            int rand = (int)(Math.random()*(i+1));
             int temp = randArrL.get(rand);
             randArrL.set(rand, randArrL.get(i));
             randArrL.set(i, temp);

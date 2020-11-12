@@ -158,7 +158,7 @@ public class NumSet {
         System.out.println();
         int result = 0;
         for(int addition : randArray){
-            result = result + addition;
+            result += addition;
         }
         System.out.println("The sum of all the numbers in the array is: " + result);
     }
